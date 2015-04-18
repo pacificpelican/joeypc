@@ -83,6 +83,11 @@
 		$( "div#thebutton17" ).click(function() {
 			joeypc_random_pink_background();
 												});
+		$( "div#thebutton18" ).click(function() {
+			var longest = joeypc_get_longest_word_in_sentence("We were somewhere around Barstow");
+	    	console.log("longest word: " + longest);
+	    	window.alert("longest word: " + longest);
+												});
 											});
 	</script>
 </head>
@@ -164,13 +169,17 @@
 				<h2>joeypc_random_pink_background()</h2>
 				<p><div class="button btn btn-default" id="thebutton17"><a href="#turnbgpink" id="turnbgpink">do: random pinkish background</a></div></p>
 			</div>
-			
+			<div class="apientry">
+				<h2>joeypc_get_longest_word_in_sentence("We were somewhere around Barstow")</h2>
+				<p><div class="button btn btn-default" id="thebutton18"><a href="#barstow" id="barstow">get longest word in a sentence (via alert)</a></div></p>
+			</div>
 		</div>
 		<div class="sidebar">
-			<p>sidebar content</p>
+			<p></p>
 		</div>
 		<div class="footer">
-			<p>footer info</p>
+			<p><a href="http://joeypc.com">joeypc.com</a> JavaScript/jQuery framework (c) 2015 <a href="http://danmckeown.info">Dan McKeown</p> 
+			<p>Licensed under the <a href="https://github.com/pacificpelican/joeypc/blob/master/LICENSE">MIT license</a>.  <a href="https://github.com/pacificpelican/joeypc">View on GitHub</a></p>
 		</div>
 	</div>
 </body>
