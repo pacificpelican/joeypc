@@ -1,4 +1,4 @@
-//	joeypc JS/jQuery framework http://joeypc.com version 0.1.0 //
+//	joeypc JS/jQuery framework http://joeypc.com version 0.1.1 //
 //	https://github.com/pacificpelican/joeypc //
 //  copyright April 2015 by Dan McKeown http://danmckeown.info //
 //	Licensed under MIT license //
@@ -298,6 +298,85 @@ function joeypc_get_longest_word_in_sentence(string) {
 						$( "body" ).css( "background-color", randomNumber );
 								console.log("changing background color to " + randomNumber);
 																		}
+	function joeypc_maxMinAvg(arr) {
+		console.log('joeypc maxMinAvg runnning');
+	  var max = arr[0];
+	  var min = arr[0];
+	  var sum = 0;
+	  var avg;
+	    for (i = 0; i < arr.length; i++) {
+	      if (arr[i] > max) {
+	        max = arr[i];
+	        sum = sum + arr[i]
 
+	                        }
+	      else if (arr[i] < min) {
+	        min = arr[i];
+	        sum = sum + arr[i]
+	                              }
+	      else {
+	        sum = sum + arr[i];
+	          }
+	                              }
+	    avg = sum/arr.length
+	    var result = "max: " + max + " " + "min: " + min + " " + "avg: " + avg ;
+	    //  document.write(sum);
+	    return result;
+									}
+
+function joeypc_make_random_light_text() {
+    var randomNumber = "#E";
+		console.log('joeypc make random light text runnning');
+		  for (i = 0; i < 1; i++) {
+			  var digit = joeypc_random_digit();
+				randomNumber = randomNumber + digit;
+															}
+				randomNumber = randomNumber + "E";
+				 for (i = 0; i < 1; i++) {
+				   var digit = joeypc_random_digit();
+				 	randomNumber = randomNumber + digit;
+				 												}
+			 // for (i = 0; i < 1; i++) {
+				//    var digit = joeypc_random_digit();
+				//  	randomNumber = randomNumber + digit;
+				//  												}
+			randomNumber = randomNumber + "E";
+			  for (i = 0; i < 1; i++) {
+				  var digit = joeypc_random_digit();
+					randomNumber = randomNumber + digit;
+																}
+			$( "body" ).css( "color", randomNumber );
+			console.log("changing background color to " + randomNumber);
+										}
+function joeypc_make_random_light_links() {
+    var randomNumber = "#E";
+		console.log('joeypc make random light text runnning');
+		  for (i = 0; i < 1; i++) {
+			  var digit = joeypc_random_digit();
+				randomNumber = randomNumber + digit;
+															}
+				randomNumber = randomNumber + "E";
+				 for (i = 0; i < 1; i++) {
+				   var digit = joeypc_random_digit();
+				 	randomNumber = randomNumber + digit;
+				 												}
+			 // for (i = 0; i < 1; i++) {
+				//    var digit = joeypc_random_digit();
+				//  	randomNumber = randomNumber + digit;
+				//  												}
+			randomNumber = randomNumber + "E";
+			  for (i = 0; i < 1; i++) {
+				  var digit = joeypc_random_digit();
+					randomNumber = randomNumber + digit;
+																}
+			$( "a" ).css( "color", randomNumber );
+			console.log("changing background color to " + randomNumber);
+										}
+
+function joeypc_random_light_text_on_dark_background_with_light_links() {
+	joeypc_make_random_dark_background();
+	joeypc_make_random_light_text();
+	joeypc_make_random_light_links();
+}
 
 joeypc();
