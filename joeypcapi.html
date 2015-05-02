@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><!-- joeypc.com API page version 0.1.1 based on Ryukyu HTML starter 0.2.0beta by Dan McKeown http://danmckeown.info //
+<html><!-- joeypc.com API page version 0.1.2 based on Ryukyu HTML starter 0.2.0beta by Dan McKeown http://danmckeown.info //
 	  			 copyright April 2015 Licensed under MIT license -->
 <head>
 	<title>joeypc debug page</title>
@@ -106,6 +106,9 @@
 		$( "div#thebutton23" ).click(function() {
 				joeypc_random_light_text_on_dark_background_with_light_links();
 										});
+		$( "div#thebutton24" ).click(function() {
+				joeypc_change_link_color("red")
+										});
 											});
 	</script>
 </head>
@@ -210,6 +213,10 @@
 			<div class="apientry">
 				<h2>joeypc_random_light_text_on_dark_background_with_light_links()</h2>
 				<p><div class="button btn btn-default" id="thebutton23"><a href="#rdk" id="rdk">make links and text a (very) light shade and background dark</a></div></p>
+			</div>
+			<div class="apientry">
+				<h2>joeypc_change_link_color("red")</h2>
+				<p><div class="button btn btn-default" id="thebutton24"><a href="#ctc" id="ctc">turn links red</a></div></p>
 			</div>
 		</div>
 		<div class="sidebar">
