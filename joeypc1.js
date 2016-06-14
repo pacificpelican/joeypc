@@ -4,22 +4,18 @@
 //	Licensed under MIT license //
 
 ;function joeypc() {
-	var joeypc_version = '1.0.0-beta1-dev'
+	var joeypc_version = '1.0.0-beta1'
 	console.log('joeypc ' + joeypc_version + ' runnning');
 					}
 
 function joeypc_change_text_color(color) {
 	console.log('joeypc user-set text color changer runnning');
-//	var randomNumber = color;
-//  	$( "body" ).css( "color", randomNumber );
 	document.body.style.color = color;
     console.log("changing text color to " + color);
 										}
 
 function joeypc_change_link_color(color) {
 	console.log('joeypc user-set link color background changer runnning');
-//	var randomNumber = color;
-//  	$( "a" ).css( "color", randomNumber );
 	var links = document.getElementsByTagName("a");
 	for (var i=0; i<links.length; i++) {
 			links[i].style.color = color;
@@ -29,8 +25,6 @@ function joeypc_change_link_color(color) {
 
 function joeypc_change_background(color) {
 	console.log('joeypc user-set background changer runnning');
-//	var randomNumber = color;
-//  	$( "body" ).css( "background-color", randomNumber );
 	document.body.style.backgroundColor = color;
     console.log("changing background to " + color);
 										}
@@ -42,8 +36,6 @@ function joeypc_random_text() {
 		var digit = Math.floor((Math.random() * 9) + 0);
 		randomNumber = randomNumber + digit;
 							}
-//		$( "body" ).css( "color", randomNumber );
-//	    console.log("changing text color to " + randomNumber);
 		joeypc_change_text_color(randomNumber);
 								}
 
@@ -64,9 +56,6 @@ function joeypc_make_random_light_text() {
 				  var digit = joeypc_random_digit();
 					randomNumber = randomNumber + digit;
 										}
-	//		$( "body" ).css( "color", randomNumber );
-			// document.body.style.color = randomNumber;
-			// console.log("changing text color to " + randomNumber);
 			joeypc_change_text_color(randomNumber);
 										}
 
@@ -77,9 +66,6 @@ function joeypc_random_dark_text() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-//		$( "body" ).css( "color", randomNumber );
-		// document.body.style.color = randomNumber;
-	    // console.log("changing text color to " + randomNumber);
 		joeypc_change_text_color(randomNumber);
 									}
 
@@ -90,9 +76,6 @@ function joeypc_random_yellow_text() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-//		$( "body" ).css( "color", randomNumber );
-		// document.body.style.color = randomNumber;
-	    // console.log("changing text color to " + randomNumber);
 		joeypc_change_text_color(randomNumber);
 									}
 
@@ -107,9 +90,6 @@ function joeypc_random_reddish_text() 		{
 
 			randomNumber = randomNumber + digit;
 								}
-	// 		$( "body" ).css( "color", randomNumber );
-		// 	document.body.style.color = randomNumber;
-	    // console.log("changing text color to " + randomNumber);
 		joeypc_change_text_color(randomNumber);
 	    							}
 										}
@@ -121,8 +101,6 @@ function joeypc_random_link_color() {
 		var digit = Math.floor((Math.random() * 9) + 0);
 		randomNumber = randomNumber + digit;
 							}
-		// $( "a" ).css( "color", randomNumber );
-	    // console.log("changing text color to " + randomNumber);
 		joeypc_change_link_color(randomNumber);
 									}
 
@@ -133,8 +111,6 @@ function joeypc_random_dark_links() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-		//  $( "a" ).css( "color", randomNumber );
-	    //  console.log("changing link color to " + randomNumber);
 		 joeypc_change_link_color(randomNumber);
 									}
 
@@ -155,8 +131,6 @@ function joeypc_make_random_light_links() {
 				  var digit = joeypc_random_digit();
 					randomNumber = randomNumber + digit;
 											}
-	//		$( "a" ).css( "color", randomNumber );
-	//		console.log("changing link color to " + randomNumber);
 			joeypc_change_link_color(randomNumber);
 										}
 
@@ -167,32 +141,28 @@ function joeypc_random_background() {
 		var digit = Math.floor((Math.random() * 9) + 0);
 		randomNumber = randomNumber + digit;
 							}
- // 	$( "body" ).css( "background-color", randomNumber );
-    // console.log("changing background to " + randomNumber);
 	joeypc_change_background(randomNumber);
 									}
 
 function joeypc_make_random_dark_background() {
     var randomNumber = "#1";
-		console.log('joeypc new random dark background runnning');
-		  for (i = 0; i < 1; i++) {
-			  var digit = joeypc_random_digit();
-				randomNumber = randomNumber + digit;
-													}
-			randomNumber = randomNumber + "1";
-				for (i = 0; i < 1; i++) {
-				  var digit = joeypc_random_digit();
-					randomNumber = randomNumber + digit;
-														}
-			randomNumber = randomNumber + "1";
-			  for (i = 0; i < 1; i++) {
-				  var digit = joeypc_random_digit();
-					randomNumber = randomNumber + digit;
-														}
-			// $( "body" ).css( "background-color", randomNumber );
-			// console.log("changing background color to " + randomNumber);
-			joeypc_change_background(randomNumber);
-																}
+	console.log('joeypc new random dark background runnning');
+  	for (i = 0; i < 1; i++) {
+	  	var digit = joeypc_random_digit();
+		randomNumber = randomNumber + digit;
+								}
+	randomNumber = randomNumber + "1";
+		for (i = 0; i < 1; i++) {
+		var digit = joeypc_random_digit();
+			randomNumber = randomNumber + digit;
+									}
+	randomNumber = randomNumber + "1";
+	  	for (i = 0; i < 1; i++) {
+		  	var digit = joeypc_random_digit();
+			randomNumber = randomNumber + digit;
+									}
+	joeypc_change_background(randomNumber);
+												}
 
 function joeypc_make_random_bluish_dark_background() {
 	var randomNumber = "#1";
@@ -211,9 +181,7 @@ function joeypc_make_random_bluish_dark_background() {
 					var digit = joeypc_random_number_1_to_10();
 						randomNumber = randomNumber + digit;
 														}
-				// $( "body" ).css( "background-color", randomNumber );
-				// 		console.log("changing background color to " + randomNumber);
-				joeypc_change_background(randomNumber);
+		joeypc_change_background(randomNumber);
 															}
 
 function joeypc_random_light_background() {
@@ -233,9 +201,7 @@ function joeypc_random_light_background() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-		// $( "body" ).css( "background-color", randomNumber );
-	    // console.log("changing background color to " + randomNumber);
-		joeypc_change_background(randomNumber);
+	joeypc_change_background(randomNumber);
 									}
 
 function joeypc_random_reddish_light_background() {
@@ -247,8 +213,6 @@ function joeypc_random_reddish_light_background() {
 			var digit = Math.floor((Math.random() * 9) + 5);
 			randomNumber = randomNumber + digit;
 								}
-		// 	$( "body" ).css( "background-color", randomNumber );
-	    // console.log("changing background to " + randomNumber);
 		joeypc_change_background(randomNumber);
 	    							}
 													}
@@ -260,8 +224,6 @@ function joeypc_random_yellow_background() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-		// 	$( "body" ).css( "background-color", randomNumber );
-	    // console.log("changing background to " + randomNumber);
 		joeypc_change_background(randomNumber);
 	    									}
 
@@ -273,9 +235,7 @@ function joeypc_random_pink_background() {
 			randomNumber = randomNumber + digit;
 								}
 		randomNumber = randomNumber + "F";
-		// $( "body" ).css( "background-color", randomNumber );
-	    // console.log("changing text color to " + randomNumber);
-		joeypc_change_background(randomNumber);
+	joeypc_change_background(randomNumber);
 									}
 
 function joeypc_random_dark_text_on_light_background_with_dark_links() {
@@ -293,13 +253,11 @@ function joeypc_random_colors_yellow_red() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-		// $( "a" ).css( "color", randomNumber );
-	    // console.log("changing link text color to " + randomNumber);
 		joeypc_change_link_color(randomNumber);
 											}
 
 function joeypc_reload_page() {
-	    	document.location.reload(true);
+	document.location.reload(true);
 	    						}
 
 function joeypc_old_random_light_background() {
@@ -309,8 +267,6 @@ function joeypc_old_random_light_background() {
 			var digit = Math.floor((Math.random() * 9) + 1);
 			randomNumber = randomNumber + digit;
 								}
-		// $( "body" ).css( "background-color", randomNumber );
-	    // console.log("changing background color to " + randomNumber);
 		joeypc_change_background(randomNumber);
 									}
 
